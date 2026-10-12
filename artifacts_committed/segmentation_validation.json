@@ -1,0 +1,595 @@
+{
+  "unit_bounds_sec": {
+    "cardiac": [
+      0.25,
+      2.0
+    ],
+    "respiratory": [
+      0.5,
+      10.0
+    ],
+    "cough": [
+      0.1,
+      1.5
+    ]
+  },
+  "cells": {
+    "circor/cardiac": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 23.74,
+        "std": 8.24,
+        "min": 7.2,
+        "50%": 25.68,
+        "max": 43.39
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 21.52,
+        "std": 13.29,
+        "min": 4.0,
+        "50%": 17.0,
+        "max": 48.0
+      },
+      "recordings_with_zero_units": 0,
+      "candidates_dropped_by_plausibility": 0,
+      "unit_duration_sec": {
+        "count": 538.0,
+        "mean": 0.591,
+        "std": 0.123,
+        "min": 0.38,
+        "5%": 0.42,
+        "50%": 0.58,
+        "95%": 0.838,
+        "max": 1.14
+      },
+      "examples": [
+        {
+          "uid": "circor:84747_TV",
+          "dur": 27.18,
+          "units": [
+            [
+              23.0,
+              23.44
+            ],
+            [
+              23.44,
+              23.86
+            ],
+            [
+              23.86,
+              24.29
+            ],
+            [
+              24.29,
+              24.72
+            ],
+            [
+              24.72,
+              25.15
+            ],
+            [
+              25.15,
+              25.57
+            ]
+          ]
+        },
+        {
+          "uid": "circor:68895_TV",
+          "dur": 19.55,
+          "units": [
+            [
+              2.78,
+              3.2
+            ],
+            [
+              3.2,
+              3.62
+            ],
+            [
+              3.62,
+              4.04
+            ],
+            [
+              4.04,
+              4.48
+            ],
+            [
+              4.48,
+              4.88
+            ],
+            [
+              4.88,
+              5.28
+            ]
+          ]
+        },
+        {
+          "uid": "circor:68740_PV",
+          "dur": 8.9,
+          "units": [
+            [
+              0.48,
+              0.98
+            ],
+            [
+              0.98,
+              1.48
+            ],
+            [
+              1.48,
+              2.04
+            ],
+            [
+              2.04,
+              2.58
+            ],
+            [
+              2.58,
+              3.1
+            ],
+            [
+              3.1,
+              3.62
+            ]
+          ]
+        }
+      ]
+    },
+    "coswara/cough": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 5.84,
+        "std": 2.46,
+        "min": 2.3,
+        "50%": 6.06,
+        "max": 14.59
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 3.88,
+        "std": 2.49,
+        "min": 0.0,
+        "50%": 4.0,
+        "max": 9.0
+      },
+      "recordings_with_zero_units": 3,
+      "candidates_dropped_by_plausibility": 27,
+      "unit_duration_sec": {
+        "count": 97.0,
+        "mean": 0.551,
+        "std": 0.394,
+        "min": 0.105,
+        "5%": 0.115,
+        "50%": 0.435,
+        "95%": 1.335,
+        "max": 1.475
+      },
+      "examples": [
+        {
+          "uid": "coswara:AkoFT2Dt9FRPyYVtHDLv3bIGRvG3_cough-shallow",
+          "dur": 2.3,
+          "units": []
+        },
+        {
+          "uid": "coswara:MBs72wy9MATqbupZbIaYYCzj7dg1_cough-heavy",
+          "dur": 6.23,
+          "units": [
+            [
+              0.8,
+              2.0
+            ],
+            [
+              2.25,
+              2.85
+            ],
+            [
+              3.45,
+              3.83
+            ],
+            [
+              5.09,
+              5.7
+            ],
+            [
+              5.95,
+              6.09
+            ]
+          ]
+        },
+        {
+          "uid": "coswara:8EVaH2QxukMhhg0ALCubXVa3Bsl2_cough-heavy",
+          "dur": 4.69,
+          "units": [
+            [
+              0.0,
+              0.49
+            ],
+            [
+              0.54,
+              1.54
+            ],
+            [
+              1.68,
+              3.02
+            ],
+            [
+              3.07,
+              3.94
+            ]
+          ]
+        }
+      ]
+    },
+    "coswara/respiratory": "no annotation; audio-only respiratory segmenter not implemented yet",
+    "coughvid/cough": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 6.94,
+        "std": 3.13,
+        "min": 0.66,
+        "50%": 8.34,
+        "max": 9.99
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 2.92,
+        "std": 1.85,
+        "min": 0.0,
+        "50%": 3.0,
+        "max": 7.0
+      },
+      "recordings_with_zero_units": 2,
+      "candidates_dropped_by_plausibility": 23,
+      "unit_duration_sec": {
+        "count": 73.0,
+        "mean": 0.626,
+        "std": 0.37,
+        "min": 0.105,
+        "5%": 0.125,
+        "50%": 0.545,
+        "95%": 1.295,
+        "max": 1.48
+      },
+      "examples": [
+        {
+          "uid": "coughvid:74797c09-59db-41b1-9efc-cc0788c4eb63",
+          "dur": 5.34,
+          "units": [
+            [
+              3.45,
+              3.65
+            ],
+            [
+              3.8,
+              4.95
+            ]
+          ]
+        },
+        {
+          "uid": "coughvid:21c17fbf-2f1d-4cc1-aece-c04afe52eea7",
+          "dur": 9.08,
+          "units": [
+            [
+              3.35,
+              3.81
+            ],
+            [
+              3.93,
+              4.53
+            ]
+          ]
+        },
+        {
+          "uid": "coughvid:39fd76e4-f504-4079-9bf3-36d3e26887ca",
+          "dur": 3.96,
+          "units": [
+            [
+              0.2,
+              0.93
+            ],
+            [
+              1.68,
+              2.88
+            ],
+            [
+              3.39,
+              3.5
+            ]
+          ]
+        }
+      ]
+    },
+    "icbhi/respiratory": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 25.37,
+        "std": 16.67,
+        "min": 12.46,
+        "50%": 20.0,
+        "max": 75.25
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 8.28,
+        "std": 5.12,
+        "min": 3.0,
+        "50%": 6.0,
+        "max": 24.0
+      },
+      "recordings_with_zero_units": 0,
+      "candidates_dropped_by_plausibility": 2,
+      "unit_duration_sec": {
+        "count": 207.0,
+        "mean": 2.918,
+        "std": 1.229,
+        "min": 0.762,
+        "5%": 1.171,
+        "50%": 3.02,
+        "95%": 4.832,
+        "max": 7.83
+      },
+      "examples": [
+        {
+          "uid": "icbhi:170_1b4_Ar_mc_AKGC417L",
+          "dur": 20.0,
+          "units": [
+            [
+              0.06,
+              3.21
+            ],
+            [
+              3.21,
+              6.22
+            ],
+            [
+              6.22,
+              9.34
+            ],
+            [
+              9.34,
+              12.61
+            ],
+            [
+              12.61,
+              15.63
+            ],
+            [
+              15.63,
+              18.84
+            ]
+          ]
+        },
+        {
+          "uid": "icbhi:162_1b2_Ll_mc_AKGC417L",
+          "dur": 20.0,
+          "units": [
+            [
+              0.09,
+              3.48
+            ],
+            [
+              3.48,
+              10.79
+            ],
+            [
+              10.79,
+              18.62
+            ]
+          ]
+        },
+        {
+          "uid": "icbhi:133_3p4_Tc_mc_AKGC417L",
+          "dur": 20.0,
+          "units": [
+            [
+              0.76,
+              3.08
+            ],
+            [
+              3.08,
+              5.67
+            ],
+            [
+              5.67,
+              8.16
+            ],
+            [
+              8.16,
+              10.74
+            ],
+            [
+              10.74,
+              13.14
+            ],
+            [
+              13.14,
+              15.72
+            ]
+          ]
+        }
+      ]
+    },
+    "kauh/respiratory": "no annotation; audio-only respiratory segmenter not implemented yet",
+    "sprsound/respiratory": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 10.73,
+        "std": 3.12,
+        "min": 4.1,
+        "50%": 9.22,
+        "max": 15.36
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 4.24,
+        "std": 2.31,
+        "min": 1.0,
+        "50%": 4.0,
+        "max": 11.0
+      },
+      "recordings_with_zero_units": 0,
+      "candidates_dropped_by_plausibility": 1,
+      "unit_duration_sec": {
+        "count": 106.0,
+        "mean": 1.628,
+        "std": 0.609,
+        "min": 0.572,
+        "5%": 0.794,
+        "50%": 1.517,
+        "95%": 2.581,
+        "max": 3.964
+      },
+      "examples": [
+        {
+          "uid": "sprsound:41074422_6.8_0_p3_13025",
+          "dur": 9.22,
+          "units": [
+            [
+              0.03,
+              1.28
+            ],
+            [
+              1.29,
+              5.25
+            ],
+            [
+              6.51,
+              8.99
+            ]
+          ]
+        },
+        {
+          "uid": "sprsound:66257443_3.5_0_p4_4745",
+          "dur": 15.36,
+          "units": [
+            [
+              1.01,
+              2.43
+            ],
+            [
+              2.53,
+              3.82
+            ],
+            [
+              3.93,
+              5.14
+            ],
+            [
+              7.22,
+              8.63
+            ],
+            [
+              8.78,
+              10.26
+            ],
+            [
+              10.33,
+              11.61
+            ]
+          ]
+        },
+        {
+          "uid": "sprsound:64601539_5.3_1_p1_3503",
+          "dur": 15.36,
+          "units": [
+            [
+              0.94,
+              3.42
+            ],
+            [
+              3.44,
+              5.94
+            ],
+            [
+              10.81,
+              12.68
+            ],
+            [
+              12.74,
+              15.15
+            ]
+          ]
+        }
+      ]
+    },
+    "tbscreen/cough": {
+      "recordings": 25,
+      "recording_duration_sec": {
+        "count": 25.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "50%": 1.0,
+        "max": 1.0
+      },
+      "units_per_recording": {
+        "count": 25.0,
+        "mean": 1.08,
+        "std": 0.4,
+        "min": 1.0,
+        "50%": 1.0,
+        "max": 3.0
+      },
+      "recordings_with_zero_units": 0,
+      "candidates_dropped_by_plausibility": 0,
+      "unit_duration_sec": {
+        "count": 27.0,
+        "mean": 0.509,
+        "std": 0.207,
+        "min": 0.115,
+        "5%": 0.15,
+        "50%": 0.525,
+        "95%": 0.829,
+        "max": 0.865
+      },
+      "examples": [
+        {
+          "uid": "tbscreen:passive:PID_74A_14_codec",
+          "dur": 1.0,
+          "units": [
+            [
+              0.57,
+              0.99
+            ]
+          ]
+        },
+        {
+          "uid": "tbscreen:passive:PID_226A_168_codec_0",
+          "dur": 1.0,
+          "units": [
+            [
+              0.06,
+              0.88
+            ]
+          ]
+        },
+        {
+          "uid": "tbscreen:passive:PID_40A_22_codec",
+          "dur": 1.0,
+          "units": [
+            [
+              0.24,
+              0.77
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "tbscreen_padded_clip_unit_counts": {
+    "1": 199,
+    "2": 1
+  },
+  "audio_only_cardiac_vs_expert": {
+    "recordings": 60,
+    "tolerance_sec": 0.1,
+    "precision": 0.591,
+    "recall": 0.359
+  }
+}

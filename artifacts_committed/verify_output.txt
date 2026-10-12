@@ -1,0 +1,59 @@
+manifest: 82565 rows, corpora: {'coughvid': 34311, 'tbscreen': 28312, 'coswara': 9415, 'sprsound': 6336, 'circor': 3163, 'icbhi': 920, 'kauh': 108}
+[PASS] uid unique -- 0 duplicates
+[PASS] every row has a split in {knowledge_base,dev,test} -- 0 rows without a valid split
+[PASS] patient_id disjoint: knowledge_base vs dev -- |intersection| = 0
+[PASS] patient_id disjoint: knowledge_base vs test -- |intersection| = 0
+[PASS] patient_id disjoint: dev vs test -- |intersection| = 0
+[PASS] [circor] every patient in exactly one split -- 0 patients span splits
+[PASS] [coswara] every patient in exactly one split -- 0 patients span splits
+[PASS] [coughvid] every patient in exactly one split -- 0 patients span splits
+[PASS] [icbhi] every patient in exactly one split -- 0 patients span splits
+[PASS] [kauh] every patient in exactly one split -- 0 patients span splits
+[PASS] [sprsound] every patient in exactly one split -- 0 patients span splits
+[PASS] [tbscreen] every patient in exactly one split -- 0 patients span splits
+[PASS] no recording_id in more than one split -- 0 offending recording_ids
+[PASS] no dup_group_id split across splits -- 0 offending groups
+[PASS] every dup_group_id within a single patient -- 0 offending groups
+[PASS] closed-set labels inside declared label space -- 0 bad rows
+[PASS] COUGHVID never has a closed-set label -- 34311 COUGHVID rows
+[PASS] every filepath exists and is readable -- 0 missing/unreadable
+[PASS] no audio file referenced by more than one uid -- 0 shared files
+[PASS] byte-identical audio never in two splits -- 0 cross-split identical contents
+[PASS] content_sha1 unique (no byte-identical recordings survive cleaning) -- 0 duplicate contents
+[PASS] [circor/cardiac] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [coswara/cough] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [coswara/respiratory] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [icbhi/respiratory] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [kauh/respiratory] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [sprsound/respiratory] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] [tbscreen/cough] present in all three splits -- splits: ['dev', 'knowledge_base', 'test']
+[PASS] every labelled row has a fold in 0..N-1 -- 0 rows without fold
+[PASS] each patient_id lies in exactly one fold -- 0 offending
+[PASS] each dup_group_id lies in exactly one fold -- 0 offending
+[PASS] each content_sha1 lies in exactly one fold -- 0 offending
+[PASS] each recording_id lies in exactly one fold -- 0 offending
+[PASS] tuning (q=fold0): query/KB patient and dup-group intersection empty -- |intersection| = 0
+[PASS] test round 1: query/KB patient and dup-group intersection empty -- |intersection| = 0
+[PASS] test round 2: query/KB patient and dup-group intersection empty -- |intersection| = 0
+[PASS] test round 3: query/KB patient and dup-group intersection empty -- |intersection| = 0
+[PASS] test round 4: query/KB patient and dup-group intersection empty -- |intersection| = 0
+[PASS] split column equals the round-1 view of fold -- 0 mismatches
+[PASS] COUGHVID: no fold, never dev, expert rows only in test
+[PASS] task coswara_cough: labels inside coswara_covid8 -- 4967 labelled; outside: []
+[PASS] task coswara_cough: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task coswara_respiratory: labels inside coswara_covid8 -- 4448 labelled; outside: []
+[PASS] task coswara_respiratory: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task tbscreen_cough: labels inside tbscreen_tb2 -- 28312 labelled; outside: []
+[PASS] task tbscreen_cough: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task icbhi_chronic: labels inside icbhi_chronic3 -- 920 labelled; outside: []
+[PASS] task icbhi_chronic: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task icbhi_adventitious: labels inside icbhi_adv4 -- 920 labelled; outside: []
+[PASS] task icbhi_adventitious: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task sprsound_adventitious: labels inside sprsound_adv4 -- 6336 labelled; outside: []
+[PASS] task sprsound_adventitious: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task kauh_adventitious: labels inside kauh_adv3 -- 108 labelled; outside: []
+[PASS] task kauh_adventitious: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+[PASS] task circor_outcome: labels inside circor_outcome2 -- 3163 labelled; outside: []
+[PASS] task circor_outcome: labelled rows in every fold -- folds [0, 1, 2, 3, 4]
+
+ALL INVARIANTS PASS

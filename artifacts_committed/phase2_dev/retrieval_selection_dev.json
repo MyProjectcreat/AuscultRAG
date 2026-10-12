@@ -1,0 +1,138 @@
+{
+  "circor_outcome": {
+    "center": 1,
+    "top_n": 200,
+    "m": 3,
+    "k": 10,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N200_m3_k20",
+    "dev_knn_macro_f1": 0.5882,
+    "dev_knn_accuracy": 0.5921,
+    "dev_knn_macro_f1_ci95": [
+      0.541462388270325,
+      0.6304966009982097
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.5403,
+    "dev_queries": 630,
+    "dev_patients": 173
+  },
+  "coswara_cough": {
+    "center": 1,
+    "top_n": 800,
+    "m": 3,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N800_m3_k20",
+    "dev_knn_macro_f1": 0.1692,
+    "dev_knn_accuracy": 0.4594,
+    "dev_knn_macro_f1_ci95": [
+      0.13638125772179707,
+      0.20873361087704964
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.3539,
+    "dev_queries": 997,
+    "dev_patients": 510
+  },
+  "coswara_respiratory": {
+    "center": 0,
+    "top_n": 50,
+    "m": 1,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c0_N50_m1_k20",
+    "dev_knn_macro_f1": 0.2107,
+    "dev_knn_accuracy": 0.5428,
+    "dev_knn_macro_f1_ci95": [
+      0.1704174912702088,
+      0.2454984679600049
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.4227,
+    "dev_queries": 888,
+    "dev_patients": 474
+  },
+  "icbhi_adventitious": {
+    "center": 1,
+    "top_n": 50,
+    "m": 5,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N50_m5_k20",
+    "dev_knn_macro_f1": 0.312,
+    "dev_knn_accuracy": 0.3539,
+    "dev_knn_macro_f1_ci95": [
+      0.23812272847041047,
+      0.3855844667475645
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.3022,
+    "dev_queries": 178,
+    "dev_patients": 24
+  },
+  "icbhi_chronic": {
+    "center": 1,
+    "top_n": 50,
+    "m": 5,
+    "k": 10,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N50_m5_k20",
+    "dev_knn_macro_f1": 0.6527,
+    "dev_knn_accuracy": 0.8989,
+    "dev_knn_macro_f1_ci95": [
+      0.4903338013222924,
+      0.7504738727474795
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.7798,
+    "dev_queries": 178,
+    "dev_patients": 24
+  },
+  "kauh_adventitious": {
+    "center": 1,
+    "top_n": 200,
+    "m": 5,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N200_m5_k20",
+    "dev_knn_macro_f1": 0.7852,
+    "dev_knn_accuracy": 0.8095,
+    "dev_knn_macro_f1_ci95": [
+      0.5459842995169082,
+      0.9611111111111111
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.619,
+    "dev_queries": 21,
+    "dev_patients": 21
+  },
+  "sprsound_adventitious": {
+    "center": 1,
+    "top_n": 50,
+    "m": 1,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N50_m1_k20",
+    "dev_knn_macro_f1": 0.4556,
+    "dev_knn_accuracy": 0.7627,
+    "dev_knn_macro_f1_ci95": [
+      0.40448860452785235,
+      0.522843780746915
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.6879,
+    "dev_queries": 1201,
+    "dev_patients": 165
+  },
+  "tbscreen_cough": {
+    "center": 1,
+    "top_n": 50,
+    "m": 1,
+    "k": 5,
+    "retrieval_cfg": "scope-corpus_cv-0_c1_N50_m1_k20",
+    "dev_knn_macro_f1": 0.5296,
+    "dev_knn_accuracy": 0.6851,
+    "dev_knn_macro_f1_ci95": [
+      0.4330054390926866,
+      0.5946344647895153
+    ],
+    "same_corpus_rate": 1.0,
+    "label_precision_at_k": 0.6205,
+    "dev_queries": 5681,
+    "dev_patients": 24
+  }
+}

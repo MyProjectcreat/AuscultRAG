@@ -1,0 +1,5 @@
+{
+  "alpha": 0.0,
+  "rule": "argmax over alpha of the mean dev macro-F1 across tasks (AuscultRAG variant)",
+  "mean_dev_macro_f1": 0.4874
+}

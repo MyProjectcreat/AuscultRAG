@@ -1,0 +1,10 @@
+model,task,n,report_score
+clap+linear-probe@xc,icbhi_adventitious,102,0.47889909057672214
+clap+linear-probe@xc,sprsound_adventitious,200,0.5007836461506906
+clap+linear-probe@xc,kauh_adventitious,87,0.4725067771764236
+hear+linear-probe@xc,icbhi_adventitious,102,0.48898422630683136
+hear+linear-probe@xc,sprsound_adventitious,200,0.5525072091519831
+hear+linear-probe@xc,kauh_adventitious,87,0.2999672004243816
+operaCT+linear-probe@xc,icbhi_adventitious,102,0.32698837702924094
+operaCT+linear-probe@xc,sprsound_adventitious,200,0.34648184401787335
+operaCT+linear-probe@xc,kauh_adventitious,87,0.3125160533764675

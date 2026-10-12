@@ -1,0 +1,117 @@
+{
+  "stage": "build_manifest",
+  "tier": "cpu",
+  "config": {
+    "corpora": [
+      "coswara",
+      "tbscreen",
+      "icbhi",
+      "circor",
+      "coughvid",
+      "sprsound",
+      "kauh"
+    ],
+    "raw_root": "raw_data",
+    "builder_version": 5
+  },
+  "config_hash": "4a2bddbbf5c3",
+  "git_commit": "744c893b1122457ea2db106e3010f6f557fd1c65-dirty",
+  "created_utc": "2026-10-09T21:18:23+00:00",
+  "rows": 82565,
+  "build_reports": {
+    "coswara": {
+      "corpus": "coswara",
+      "excluded": {
+        "cough-heavy: annotated quality 0 (bad)": 166,
+        "breathing-deep: annotated quality 0 (bad)": 405,
+        "breathing-shallow: annotated quality 0 (bad)": 410,
+        "cough-shallow: annotated quality 0 (bad)": 140,
+        "cough-heavy: empty file (header only)": 41,
+        "cough-shallow: empty file (header only)": 38,
+        "breathing-deep: empty file (header only)": 37,
+        "breathing-shallow: empty file (header only)": 52,
+        "returning user (unlinkable duplicate identity)": 252,
+        "cough-shallow: file missing": 1,
+        "zero-length audio": 0,
+        "digital silence (peak amplitude 0)": 25,
+        "identical audio filed under two families (modality unknown)": 2
+      },
+      "notes": [
+        "63 participants flagged returning user (rU=='y') excluded; 680 have rU missing and are kept"
+      ]
+    },
+    "tbscreen": {
+      "corpus": "tbscreen",
+      "excluded": {
+        "passive: consented row but wav absent from archive": 4999,
+        "passive: Permission_sound != Yes": 1299,
+        "forced: Permission_sound != Yes": 43,
+        "forced: consented row but wav absent from archive": 164,
+        "forced: Permission_sound != Yes (wav shipped anyway)": 15,
+        "zero-length audio": 0,
+        "digital silence (peak amplitude 0)": 34
+      },
+      "notes": [
+        "person aliases merged: A32->C32",
+        "patients with >1 label: 0"
+      ]
+    },
+    "icbhi": {
+      "corpus": "icbhi",
+      "excluded": {
+        "zero-length audio": 0
+      },
+      "notes": [
+        "filename_differences.txt lists 91 names; 0 of them are on-disk filenames",
+        "1 recordings absent from the official split file"
+      ]
+    },
+    "circor": {
+      "corpus": "circor",
+      "excluded": {
+        "zero-length audio": 0
+      },
+      "notes": [
+        "942 Patient IDs resolve to 872 persons; 70 persons carry 2+ IDs",
+        "13 merged persons have different Outcome labels across their campaign visits (labels kept per visit; split is per person)"
+      ]
+    },
+    "coughvid": {
+      "corpus": "coughvid",
+      "excluded": {
+        "zero-length audio": 0,
+        "digital silence (peak amplitude 0)": 40,
+        "byte-identical copy of another kept recording": 83
+      },
+      "notes": [
+        "merged 83 patient_id(s) into 24 other(s) because they share byte-identical audio (largest cluster: coughvid:161de1b6-fbce-4d80-b156-d3dc4a960455 absorbs 18); full mapping = manifest patient_id vs recording_id"
+      ]
+    },
+    "sprsound": {
+      "corpus": "sprsound",
+      "excluded": {
+        "record annotated Poor Quality": 230,
+        "zero-length audio": 0,
+        "byte-identical copy of another kept recording": 1
+      },
+      "notes": [
+        "patients with conflicting diagnoses across summary files: 44",
+        "3013 record labels derived from event annotations (validated 100% agreement)"
+      ]
+    },
+    "kauh": {
+      "corpus": "kauh",
+      "excluded": {
+        "filter variant B of the same recording (kept E only)": 112,
+        "filter variant D of the same recording (kept E only)": 112,
+        "sound type outside adv3 space: I C E W": 2,
+        "sound type outside adv3 space: Bronchial": 1,
+        "zero-length audio": 0,
+        "byte-identical copy of another kept recording": 1
+      },
+      "notes": [
+        "merged 1 patient_id(s) into 1 other(s) because they share byte-identical audio (largest cluster: kauh:76 absorbs 1); full mapping = manifest patient_id vs recording_id"
+      ]
+    }
+  }
+}

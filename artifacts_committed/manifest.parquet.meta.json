@@ -1,0 +1,16 @@
+{
+  "stage": "make_splits",
+  "tier": "cpu",
+  "config": {
+    "n_folds": 5,
+    "dev_fold": 0,
+    "seed": 20261009,
+    "policy": {
+      "coughvid": "coughvid_expert_test"
+    },
+    "source_meta_hash": "f60748e5a859"
+  },
+  "config_hash": "c6e429ecc059",
+  "git_commit": "744c893b1122457ea2db106e3010f6f557fd1c65-dirty",
+  "created_utc": "2026-10-09T21:18:47+00:00"
+}

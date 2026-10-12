@@ -1,0 +1,56 @@
+[project]
+name = "auscultrag"
+version = "0.2.0"
+description = "AuscultRAG rebuild: retrieval-augmented cardiopulmonary sound classification with patient-disjoint evaluation."
+requires-python = "==3.11.*"
+dependencies = [
+    "numpy>=1.26,<2.3",
+    "pandas>=2.2,<2.4",
+    "pyarrow>=17",
+    "scipy>=1.13",
+    "soundfile>=0.12",
+    "librosa>=0.10.2",
+    "pyyaml>=6",
+    "requests>=2.32",
+    "tqdm>=4.66",
+    "openpyxl>=3.1",
+    "imageio-ffmpeg>=0.5",
+    "torch==2.5.1",
+    "torchaudio==2.5.1",
+    "transformers>=4.46,<4.50",
+    "faiss-cpu>=1.8",
+    "openai>=1.55",
+    "huggingface-hub>=0.26",
+    "tabulate>=0.10.0",
+    "google-genai>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pypdf>=6.19.0",
+    "pytest>=8",
+]
+opera = [
+    "efficientnet-pytorch>=0.7.1",
+    "matplotlib>=3.11.2",
+    "pytorch-lightning>=2.2,<2.6",
+    "seaborn>=0.13.2",
+    "timm>=0.9,<1.1",
+    "torchlibrosa>=0.1.0",
+]
+report = [
+    "matplotlib>=3.11.2",
+    "pypdfium2>=5.13.0",
+    "reportlab>=5.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["auscultrag*"]
+
+[tool.uv]
+# Reproducibility: never resolve packages published after this date.
+exclude-newer = "2026-09-25T00:00:00Z"

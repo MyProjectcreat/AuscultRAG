@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.part
+/artifacts/
+*.egg-info/
+# workspace entries that are data / links, not code
+/raw_data
+/artifacts
+/backup
+/_old_v1_empty_skeleton/
+.env
+.pytest_cache/

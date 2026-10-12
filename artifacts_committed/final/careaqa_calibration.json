@@ -1,0 +1,189 @@
+[
+  {
+    "alpha": 8.0,
+    "layout": "card",
+    "acc": 0.0,
+    "pred_dist": {
+      "Asthma": 4,
+      "null": 76
+    },
+    "sec": 9,
+    "examples": [
+      "definitely a case of asthma.",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "alpha": 8.0,
+    "layout": "q_p_answer",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 8,
+    "examples": [
+      "1.",
+      "3",
+      "1",
+      "1"
+    ]
+  },
+  {
+    "alpha": 8.0,
+    "layout": "q_p_answer:",
+    "acc": 0.0375,
+    "pred_dist": {
+      "null": 76,
+      "Pneumonia": 1,
+      "COPD": 3
+    },
+    "sec": 25,
+    "examples": [
+      "Bronchitis",
+      "What was the diagnosis based on the auscultation findings?",
+      "What is the diagnosis based on the auscultation findings?",
+      "What is the diagnosis based on the auscultation findings?"
+    ]
+  },
+  {
+    "alpha": 8.0,
+    "layout": "p_q_answer:",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 5,
+    "examples": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "alpha": 16.0,
+    "layout": "card",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 5,
+    "examples": [
+      "deficit",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "alpha": 16.0,
+    "layout": "q_p_answer",
+    "acc": 0.5875,
+    "pred_dist": {
+      "COPD": 71,
+      "null": 9
+    },
+    "sec": 20,
+    "examples": [
+      "COPD",
+      "The diagnosis was COPD.",
+      "The diagnosis is COPD.",
+      "The diagnosis is COPD."
+    ]
+  },
+  {
+    "alpha": 16.0,
+    "layout": "q_p_answer:",
+    "acc": 0.175,
+    "pred_dist": {
+      "Bronchiectasis": 53,
+      "Bronchiolitis": 2,
+      "COPD": 16,
+      "null": 9
+    },
+    "sec": 18,
+    "examples": [
+      "Bronchiectasis",
+      "Bronchiectasis",
+      "Bronchiectasis",
+      "Bronchiectasis"
+    ]
+  },
+  {
+    "alpha": 16.0,
+    "layout": "p_q_answer:",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 5,
+    "examples": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "alpha": 32.0,
+    "layout": "card",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 5,
+    "examples": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "alpha": 32.0,
+    "layout": "q_p_answer",
+    "acc": 0.6375,
+    "pred_dist": {
+      "COPD": 80
+    },
+    "sec": 16,
+    "examples": [
+      "COPD",
+      "COPD",
+      "The diagnosis is COPD.",
+      "The diagnosis is COPD."
+    ]
+  },
+  {
+    "alpha": 32.0,
+    "layout": "q_p_answer:",
+    "acc": 0.6375,
+    "pred_dist": {
+      "COPD": 80
+    },
+    "sec": 16,
+    "examples": [
+      "COPD",
+      "COPD",
+      "The diagnosis is COPD.",
+      "The diagnosis is COPD."
+    ]
+  },
+  {
+    "alpha": 32.0,
+    "layout": "p_q_answer:",
+    "acc": 0.0,
+    "pred_dist": {
+      "null": 80
+    },
+    "sec": 5,
+    "examples": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+# Separate environment for open-weight audio-LLM baselines (StethoLM / MedGemma, Qwen2-Audio, Audio Flamingo 3),
+# which need a newer transformers than the main env (pinned 4.49 for the CLAP embeddings).
+# venv outside git, e.g.:  UV_PROJECT_ENVIRONMENT=<raw_data>/envs/gpu uv sync   (then GPU_PYTHON=<that env>/bin/python)
+[project]
+name = "auscultrag-gpu-baselines"
+version = "0.1.0"
+requires-python = "==3.11.*"
+dependencies = [
+  "torch==2.5.1", "torchaudio==2.5.1", "transformers>=4.57", "accelerate", "peft", "efficientnet_pytorch",
+  "librosa", "soundfile", "scipy", "pandas", "numpy<2.3", "sentencepiece", "huggingface_hub", "tqdm",
+]
+
+[tool.uv]
+exclude-newer = "2026-09-25T00:00:00Z"

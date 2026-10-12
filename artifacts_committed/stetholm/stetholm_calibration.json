@@ -1,0 +1,158 @@
+[
+  {
+    "act": "gelu",
+    "template": "chat",
+    "place": "before_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.8333333333333334,
+    "sec": 83,
+    "examples": [
+      "I am unable to determine if a murmur is present as I cannot hear sounds. A healthcare professional would need to listen to the patient's heart sounds.",
+      "I am unable to provide a medical diagnosis. A murmur is a sound heard during auscultation that is not a normal heart sound. To determine if a murmur is present, a physical examination by a",
+      "I am unable to determine if a murmur is present as I cannot hear sounds. A healthcare professional would need to listen to the patient's heart sounds."
+    ]
+  },
+  {
+    "act": "gelu",
+    "template": "chat",
+    "place": "after_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.9,
+    "sec": 88,
+    "examples": [
+      "I am unable to provide a medical diagnosis. A murmur can be indicative of various heart conditions. A qualified healthcare professional is needed to determine the presence and nature of a murmur.",
+      "I am unable to provide a medical diagnosis. A murmur is a sound heard during auscultation that suggests abnormal blood flow. To determine if a murmur is present, a physical examination by a qualified healthcare",
+      "I am unable to provide a medical diagnosis. A murmur is a sound heard during auscultation that is not a normal heart sound. To determine if a murmur is present, a physical examination by a"
+    ]
+  },
+  {
+    "act": "gelu",
+    "template": "plain",
+    "place": "before_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.9333333333333333,
+    "sec": 66,
+    "examples": [
+      "A systolic murmur is a blowing sound heard best at the left sternal border, typically during systole. It is often associated with valvular abnormalities.",
+      "The presence of a murmur indicates a turbulent flow, often associated with valvular abnormalities.\n\nIs there a gallop?\n\nNo gallop is present, indicating no abnormal heart sounds like those associated",
+      "A murmur is a whooshing sound heard during heartbeats, often due to turbulent blood flow. A systolic murmur is heard during systole, and a diastolic murmur during diastole."
+    ]
+  },
+  {
+    "act": "gelu",
+    "template": "plain",
+    "place": "after_bos",
+    "heart-circor": 0.4,
+    "icbhi": 0.8666666666666667,
+    "sec": 46,
+    "examples": [
+      "",
+      "",
+      "Yes, a systolic murmur is present at the aortic valve point."
+    ]
+  },
+  {
+    "act": "gelu",
+    "template": "qa",
+    "place": "before_bos",
+    "heart-circor": 0.6333333333333333,
+    "icbhi": 0.9333333333333333,
+    "sec": 26,
+    "examples": [
+      "No murmur is present.",
+      "No murmur is present.",
+      "No murmur is present."
+    ]
+  },
+  {
+    "act": "gelu",
+    "template": "qa",
+    "place": "after_bos",
+    "heart-circor": 0.6333333333333333,
+    "icbhi": 0.9333333333333333,
+    "sec": 24,
+    "examples": [
+      "No murmur is present.",
+      "No murmur is present.",
+      "No murmur is present."
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "chat",
+    "place": "before_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.8666666666666667,
+    "sec": 83,
+    "examples": [
+      "I am unable to determine if a murmur is present as I cannot hear sounds. A healthcare professional would need to listen to the patient's heart sounds.",
+      "I am unable to determine if a murmur is present as I cannot hear sounds. A healthcare professional would need to listen to the patient's heart sounds.",
+      "I am unable to determine if a murmur is present as I cannot hear sounds. A healthcare professional would need to listen to the patient's heart sounds."
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "chat",
+    "place": "after_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.8666666666666667,
+    "sec": 85,
+    "examples": [
+      "I am unable to provide a medical diagnosis. A murmur can be indicative of various heart conditions. A qualified healthcare professional is needed to determine the presence of a murmur and its cause.",
+      "I am unable to provide a medical diagnosis. A murmur is a sound heard during auscultation that suggests abnormal blood flow. To determine if a murmur is present, a physical examination by a qualified healthcare",
+      "I am unable to provide a medical diagnosis. A murmur is a sound heard during auscultation that is not a normal heart sound. To determine if a murmur is present, a physical examination by a"
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "plain",
+    "place": "before_bos",
+    "heart-circor": 0.36666666666666664,
+    "icbhi": 0.9,
+    "sec": 69,
+    "examples": [
+      "A systolic murmur is a blowing sound heard during systole, typically at the mitral or tricuspid valve. The presence of a systolic murmur indicates valvular dysfunction.",
+      "The presence of a murmur indicates a possible valvular abnormality.\n\nIs there a gallop?\n\nNo gallop is present, suggesting no significant ventricular septal defect or other structural abnormality.",
+      "A systolic murmur is a blowing sound heard best at the left sternal border, typically associated with valvular abnormalities. The absence of a systolic murmur makes a systolic murmur less likely."
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "plain",
+    "place": "after_bos",
+    "heart-circor": 0.4,
+    "icbhi": 0.9333333333333333,
+    "sec": 39,
+    "examples": [
+      "",
+      "",
+      "Yes, a systolic murmur is present at the aortic valve point."
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "qa",
+    "place": "before_bos",
+    "heart-circor": 0.6333333333333333,
+    "icbhi": 0.9333333333333333,
+    "sec": 22,
+    "examples": [
+      "No murmur is present.",
+      "No murmur is present.",
+      "No murmur is present."
+    ]
+  },
+  {
+    "act": "relu",
+    "template": "qa",
+    "place": "after_bos",
+    "heart-circor": 0.6333333333333333,
+    "icbhi": 0.9333333333333333,
+    "sec": 21,
+    "examples": [
+      "No murmur is present.",
+      "No murmur is present.",
+      "No murmur is present."
+    ]
+  }
+]

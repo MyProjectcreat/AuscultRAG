@@ -1,0 +1,23 @@
+# Evaluation tasks. The primary experimental unit is (corpus, family) with the corpus's own label
+# space (R5). A task names where its label lives: `label` (the manifest's primary column) or a
+# meta_* column holding a secondary label for the same recordings. Splits/folds are shared by all
+# tasks of a corpus, because they are assigned per patient.
+tasks:
+  coswara_cough:        {corpus: coswara,  family: cough,       label_field: label,           label_space: coswara_covid8}
+  coswara_respiratory:  {corpus: coswara,  family: respiratory, label_field: label,           label_space: coswara_covid8}
+  tbscreen_cough:       {corpus: tbscreen, family: cough,       label_field: label,           label_space: tbscreen_tb2}
+  icbhi_chronic:        {corpus: icbhi,    family: respiratory, label_field: label,           label_space: icbhi_chronic3}
+  icbhi_adventitious:   {corpus: icbhi,    family: respiratory, label_field: meta_label_adv4, label_space: icbhi_adv4}
+  sprsound_adventitious: {corpus: sprsound, family: respiratory, label_field: label,          label_space: sprsound_adv4}
+  kauh_adventitious:    {corpus: kauh,     family: respiratory, label_field: label,           label_space: kauh_adv3}
+  circor_outcome:       {corpus: circor,   family: cardiac,     label_field: label,           label_space: circor_outcome2}
+# Tasks sharing a harmonised label space: a retrieved case from another corpus in the group carries a
+# usable label (read from that corpus's field). Outside a group, only same-corpus cases are labelled.
+harmonized_groups:
+  adventitious: {icbhi: meta_label_adv4, sprsound: label, kauh: label}
+task_group:
+  icbhi_adventitious: adventitious
+  sprsound_adventitious: adventitious
+  kauh_adventitious: adventitious
+# COUGHVID has no closed-set ground truth (R7). Its expert-annotated subset is an out-of-distribution
+# pool only (split = test, never KB / dev); its other recordings are switchable KB padding.

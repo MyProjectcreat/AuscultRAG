@@ -3,6 +3,7 @@ name = "auscultrag"
 version = "0.2.0"
 description = "AuscultRAG rebuild: retrieval-augmented cardiopulmonary sound classification with patient-disjoint evaluation."
 requires-python = "==3.11.*"
+license = "MIT"
 dependencies = [
     "numpy>=1.26,<2.3",
     "pandas>=2.2,<2.4",

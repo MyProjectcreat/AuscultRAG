@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/PyTorch-2.5-6366f1?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch 2.5">
   <img src="https://img.shields.io/badge/Transformers-HF-8b5cf6?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face Transformers">
   <img src="https://img.shields.io/badge/env-uv-a855f7?style=flat-square" alt="uv">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" alt="MIT License"></a>
   <br>
   <img src="https://img.shields.io/badge/area-Medical%20Audio%20%C2%B7%20Audio--LLM%20%C2%B7%20RAG-0e7490?style=flat-square" alt="Research area">
   <img src="https://img.shields.io/badge/data-6%20corpora%20%C2%B7%208%20tasks-1d4ed8?style=flat-square" alt="6 corpora, 8 tasks">
@@ -26,7 +27,8 @@
   <a href="#installation"><b>Installation</b></a> &nbsp;·&nbsp;
   <a href="#running-the-pipeline"><b>Pipeline</b></a> &nbsp;·&nbsp;
   <a href="#re-scoring-the-released-outputs-no-api-needed"><b>Re-score released outputs</b></a> &nbsp;·&nbsp;
-  <a href="#citation"><b>Citation</b></a>
+  <a href="#citation"><b>Citation</b></a> &nbsp;·&nbsp;
+  <a href="#license"><b>License</b></a>
 </p>
 
 ---
@@ -93,6 +95,7 @@ General-purpose audio LLMs can hear a stethoscope recording, but they rarely kno
 - [Evaluation protocol in one paragraph](#evaluation-protocol-in-one-paragraph)
 - [Compute and cost](#compute-and-cost)
 - [Citation](#citation)
+- [License](#license)
 
 ---
 
@@ -118,6 +121,7 @@ General-purpose audio LLMs can hear a stethoscope recording, but they rarely kno
 ├── assets/banner.svg           # README banner
 ├── artifacts_committed/        # released raw results: queues, responses, per-run scores, splits
 ├── pyproject.toml / uv.lock    # pinned main environment
+├── LICENSE                     # MIT
 └── README.md
 ```
 
@@ -340,3 +344,9 @@ API usage depends on provider pricing at run time. Audio-input tokens dominate t
 ```
 
 *This repository is anonymised for double-blind review.*
+
+---
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). The six public corpora are **not** redistributed here. They are downloaded from their original sources by `scripts/acquire/` and remain under their own licences and terms of use; please comply with them. Released model responses were produced by third-party APIs and models and are provided for research reproducibility.

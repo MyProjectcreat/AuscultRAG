@@ -1,18 +1,45 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.svg" alt="AuscultRAG — Retrieval-Augmented Audio-LLM for Cardiopulmonary Diagnostic Reporting" width="100%">
+</p>
 
-# AuscultRAG
+<p align="center">
+  <a href="#citation"><img src="https://img.shields.io/badge/NAACL-2027-3b82f6?style=flat-square" alt="NAACL 2027"></a>
+  <img src="https://img.shields.io/badge/Python-3.11-22d3ee?style=flat-square&logo=python&logoColor=white" alt="Python 3.11">
+  <img src="https://img.shields.io/badge/PyTorch-2.5-6366f1?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch 2.5">
+  <img src="https://img.shields.io/badge/Transformers-HF-8b5cf6?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face Transformers">
+  <img src="https://img.shields.io/badge/env-uv-a855f7?style=flat-square" alt="uv">
+  <br>
+  <img src="https://img.shields.io/badge/area-Medical%20Audio%20%C2%B7%20Audio--LLM%20%C2%B7%20RAG-0e7490?style=flat-square" alt="Research area">
+  <img src="https://img.shields.io/badge/data-6%20corpora%20%C2%B7%208%20tasks-1d4ed8?style=flat-square" alt="6 corpora, 8 tasks">
+  <img src="https://img.shields.io/badge/status-anonymous%20code%20release-475569?style=flat-square" alt="Anonymous code release">
+</p>
 
-**Retrieval-Augmented Audio-LLM for Cardiopulmonary Diagnostic Reporting**
+<p align="center">
+  <b>Give any audio LLM an acoustic memory.</b> AuscultRAG retrieves acoustically similar heart, lung and cough recordings from a
+  patient-disjoint case library and uses their expert annotations as evidence, so that general-purpose audio LLMs can write
+  structured diagnostic reports from the sound, without any fine-tuning.
+</p>
 
-[![NAACL 2027](https://img.shields.io/badge/NAACL-2027-1f6feb.svg)](#)
-[![Python 3.11](https://img.shields.io/badge/python-3.11-3776ab.svg)](https://www.python.org/)
-[![PyTorch 2.5](https://img.shields.io/badge/PyTorch-2.5-ee4c2c.svg)](https://pytorch.org/)
-[![uv](https://img.shields.io/badge/env-uv-6e56cf.svg)](https://docs.astral.sh/uv/)
-[![Anonymous](https://img.shields.io/badge/code-anonymous%20submission-lightgrey.svg)](#)
-
-</div>
+<p align="center">
+  <a href="#overview"><b>Overview</b></a> &nbsp;·&nbsp;
+  <a href="#highlights"><b>Highlights</b></a> &nbsp;·&nbsp;
+  <a href="#installation"><b>Installation</b></a> &nbsp;·&nbsp;
+  <a href="#running-the-pipeline"><b>Pipeline</b></a> &nbsp;·&nbsp;
+  <a href="#re-scoring-the-released-outputs-no-api-needed"><b>Re-score released outputs</b></a> &nbsp;·&nbsp;
+  <a href="#citation"><b>Citation</b></a>
+</p>
 
 ---
+
+## Highlights
+
+- **Training-free.** No model is fine-tuned. Retrieval runs on frozen CLAP embeddings, and the case library can grow by appending new recordings.
+- **Audio-to-audio retrieval.** Unit-level neighbours (cardiac cycles, respiratory events, cough bursts) are aggregated into provenance-filtered, patient-diverse cases.
+- **Clinically structured output.** Models write Findings, an Impression and expert-defined report fields, scored field by field against the corpora's expert annotations.
+- **Strict evaluation.** Patient-disjoint folds, every hyper-parameter selected on a separate development fold, and patient-level (paired) bootstrap CIs.
+- **Broad comparison.** Proprietary and open audio LLMs, medical LLMs (CaReAQA, MedGemma), text-only controls, k-NN and supervised specialist probes (OPERA-CT, HeAR, CLAP).
+- **Stress tests.** Evidence-relevance controls (random and far neighbours), text-based retrieval, cross-dataset retrieval and query-side noise and codec perturbations.
+- **Re-scorable.** Every prompt (including the retrieved evidence) and every raw model response is released, so all LLM report scores can be recomputed without calling any API.
 
 ## Overview
 
@@ -51,6 +78,8 @@ General-purpose audio LLMs can hear a stethoscope recording, but they rarely kno
 
 ## Contents
 
+- [Highlights](#highlights)
+- [Overview](#overview)
 - [Repository layout](#repository-layout)
 - [Installation](#installation)
 - [Data](#data)
@@ -86,6 +115,7 @@ General-purpose audio LLMs can hear a stethoscope recording, but they rarely kno
 ├── envs/gpu/                   # separate environment for open-weight LLMs (transformers 5.x)
 ├── slurm/                      # example SLURM job (GPU embedding)
 ├── tests/                      # unit tests (retrieval engine, split invariants)
+├── assets/banner.svg           # README banner
 ├── artifacts_committed/        # released raw results: queues, responses, per-run scores, splits
 ├── pyproject.toml / uv.lock    # pinned main environment
 └── README.md
